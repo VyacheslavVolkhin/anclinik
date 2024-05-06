@@ -1,10 +1,11 @@
+
 $(document).ready(function(){
 	
 	//compare-slider-box
 	if (!!$('.item-tile-compare').offset()) {
 		$('.item-tile-compare .tile-slider').slick({
 			dots: false,
-			slidesToShow: 4,
+			slidesToShow: 2,
 			slidesToScroll: 1,
 			touchThreshold: 100,
 			variableWidth: false,
@@ -22,19 +23,19 @@ $(document).ready(function(){
 				{
 					breakpoint: 1024,
 					settings: {
-						slidesToShow: 6,
+						slidesToShow: 3,
 					}
 				},
 				{
 					breakpoint: 768,
 					settings: {
-						slidesToShow: 4,
+						slidesToShow: 2,
 					}
 				},
 				{
 					breakpoint: 480,
 					settings: {
-						slidesToShow: 3,
+						slidesToShow: 1,
 					}
 				},
 			]

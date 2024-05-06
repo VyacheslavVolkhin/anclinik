@@ -1,3 +1,6 @@
+.js-tab-block:not(.active) {
+	display: none !important;
+}
 .slick-dots {
     display: flex;
     align-items: center;
@@ -229,9 +232,15 @@
 	position: relative;
 }
 .item-tile-compare .tile-sl-wrap {
-	display: block;
+	display: flex !important;
+	justify-content: space-between;
 	padding: 0 4px;
 	position: relative;
+	cursor: pointer;
+}
+.item-tile-compare .tile-sl-wrap .tile-photo {
+	flex-shrink: 0;
+	width: calc(50% - 4px);
 }
 .item-tile-compare .slider-button-small {
 	position: absolute;
